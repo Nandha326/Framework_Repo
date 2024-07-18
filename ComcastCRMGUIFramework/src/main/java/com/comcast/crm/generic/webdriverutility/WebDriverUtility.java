@@ -60,6 +60,10 @@ public class WebDriverUtility {
 	public void SwitchtoAlertAndCancel(WebDriver driver) {
 		driver.switchTo().alert().dismiss();
 	}
+	public void Draganddrop(WebDriver driver,WebElement srcele,WebElement targetele) {
+		Actions action = new Actions(driver);
+		action.dragAndDrop(srcele, targetele).perform();
+	}
 	public void select (WebElement element, int index) {
 		Select sel = new Select(element);
 		sel.selectByIndex(index);
