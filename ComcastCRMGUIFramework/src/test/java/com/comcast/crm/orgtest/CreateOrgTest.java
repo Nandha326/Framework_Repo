@@ -1,16 +1,16 @@
 package com.comcast.crm.orgtest;
 
-import org.testng.annotations.Listeners;
+//import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.comcast.crm.basetest.BaseClass;
 import com.comcast.crm.objectrepositoryutility.Creating_New_Organization;
 import com.comcast.crm.objectrepositoryutility.Homepage;
 import com.comcast.crm.objectrepositoryutility.OraganizationInfopage;
 import com.comcast.crm.objectrepositoryutility.Organizationspage;
-@Listeners(com.comcast.crm.listenerUtility.ListImpClass.class)
-public class CreateOrgtest extends BaseClass {
+//@Listeners(com.comcast.crm.listenerUtility.ListImpClass.class)
+public class CreateOrgTest extends BaseClass {
 	@Test(groups = "Smoke Testing")
-	public void CreateOrganizationtest() throws Throwable {
+	public void createOrganizationtest() throws Throwable {
 		
         //Read the Common data from Excel file
        String OrgName=elib.getDataFromExcel("Org", 1, 2)+jlib.getRandomNumber();
