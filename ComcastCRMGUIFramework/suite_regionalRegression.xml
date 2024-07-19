@@ -5,7 +5,7 @@
     <classes>
       <class name="com.comcast.crm.contacttest.CreateContact_Test">
       <methods>
-		<include name="CreateContact_Test">
+		<include name="createcontactwithOrgTest">
 		</include>
 	  </methods>
 	  </class>

@@ -5,7 +5,7 @@
 	<parameter name="BROWSER" value="edge"></parameter>
     <classes>
       <class name="com.comcast.crm.contacttest.CreateContact_Test"/>
-      <class name="com.comcast.crm.orgtest.CreateOrgtest"/>
+      <class name="com.comcast.crm.orgtest.CreateOrgTest"/>
     </classes>
   </test> <!-- Test -->
    <test name="TestRunner-chrome">
