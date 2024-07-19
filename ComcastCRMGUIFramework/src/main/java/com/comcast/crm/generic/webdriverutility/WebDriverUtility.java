@@ -1,12 +1,16 @@
 package com.comcast.crm.generic.webdriverutility;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -76,4 +80,15 @@ public class WebDriverUtility {
 		Actions act = new Actions(driver);
 		act.moveToElement(element).perform();
 	}
+	public static String takeScreenshot(WebDriver driver, String methdName) throws Throwable {
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		//Temporary location
+		File srcfile = ts.getScreenshotAs(OutputType.FILE);
+		//Destination File
+		File destfile=new File("./Screenshots/homepage"+methdName+".png");
+		String Dest =destfile.getPath();
+		FileHandler.copy(srcfile, destfile);
+		return Dest;
+	}
+
 }
