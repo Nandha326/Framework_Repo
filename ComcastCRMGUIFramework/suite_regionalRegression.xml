@@ -9,11 +9,6 @@
 		</include>
 	  </methods>
 	  </class>
-      <class name="com.comcast.crm.orgtest.CreateOrgTest">
-		<methods>
-			<include name="CreateOrgTest"></include>
-		</methods>
-		</class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
