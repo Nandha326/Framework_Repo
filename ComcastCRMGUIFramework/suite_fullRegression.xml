@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.comcast.crm.contacttest.CreateContact_Test"/>
-      <class name="com.comcast.crm.orgtest.CreateOrgtest"/>
+      <class name="com.comcast.crm.orgtest.CreateOrgTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

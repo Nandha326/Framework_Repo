@@ -12,7 +12,7 @@
 	<parameter name="BROWSER" value="chrome"></parameter>
     <classes>
       <class name="com.comcast.crm.contacttest.CreateContact_Test"/>
-      <class name="com.comcast.crm.orgtest.CreateOrgtest"/>
+      <class name="com.comcast.crm.orgtest.CreateOrgTest"/>
     </classes>
    </test>
 </suite> <!-- Suite -->

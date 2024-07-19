@@ -5,13 +5,13 @@
     <classes>
       <class name="com.comcast.crm.contacttest.CreateContact_Test">
       <methods>
-		<include name="createcontactwithOrgTest">
+		<include name="CreateContact_Test">
 		</include>
 	  </methods>
 	  </class>
-      <class name="com.comcast.crm.orgtest.CreateOrgtest">
+      <class name="com.comcast.crm.orgtest.CreateOrgTest">
 		<methods>
-			<include name="CreateOrganizationtest"></include>
+			<include name="CreateOrgTest"></include>
 		</methods>
 		</class>
     </classes>

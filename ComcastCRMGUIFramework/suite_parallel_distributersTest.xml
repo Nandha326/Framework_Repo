@@ -10,7 +10,7 @@
   
     <test name="Test-2">
     <classes>
-       <class name="com.comcast.crm.orgtest.CreateOrgtest"/>
+       <class name="com.comcast.crm.orgtest.CreateOrgTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
