@@ -40,7 +40,7 @@ public class BaseClass {
 	public void configBC(/*String browser*/) throws Throwable {
 		System.out.println("==Launch the BROWSER==");
 		//String BROWSER = browser;
-		String BROWSER = System.getProperty("browser");
+		String BROWSER = System.getProperty("browser",fLib.getDataFromPropertiesFile("browser"));
 		/*String BROWSER=fLib.getDataFromPropertiesFile("browser");*/
         if (BROWSER.equals("firefox")) {
             driver = new FirefoxDriver();
@@ -54,9 +54,9 @@ public class BaseClass {
 	@BeforeMethod (groups = {"Smoke Testing","Regression Testing"})
 	public void configBM() throws Throwable {
 		System.out.println("=login=");
-		String URL = System.getProperty("url");
-		String USERNAME = System.getProperty("username");
-		String PASSWORD = System.getProperty("password");
+		String URL = System.getProperty("url",fLib.getDataFromPropertiesFile("url"));
+		String USERNAME = System.getProperty("username",fLib.getDataFromPropertiesFile("username"));
+		String PASSWORD = System.getProperty("password",fLib.getDataFromPropertiesFile("password"));
 		/*String URL = fLib.getDataFromPropertiesFile("url");
 		String USERNAME = fLib.getDataFromPropertiesFile("username");
 		String PASSWORD = fLib.getDataFromPropertiesFile("password");*/

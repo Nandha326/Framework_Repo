@@ -1,108 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="0" failed="0" skipped="1">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-19T12:27:26 IST" name="Default suite" finished-at="2024-07-19T12:27:26 IST" duration-ms="116">
+  <suite started-at="2024-07-21T12:32:55 IST" name="Default suite" finished-at="2024-07-21T12:33:38 IST" duration-ms="42743">
     <groups>
-      <group name="Regression Testing">
-        <method signature="CreateContact_Test.createcontactwithOrgTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" name="createcontactwithOrgTest" class="com.comcast.crm.contacttest.CreateContact_Test"/>
-      </group> <!-- Regression Testing -->
+      <group name="Smoke Testing">
+        <method signature="CreateContact_Test.CreateContactTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" name="CreateContactTest" class="com.comcast.crm.contacttest.CreateContact_Test"/>
+      </group> <!-- Smoke Testing -->
     </groups>
-    <test started-at="2024-07-19T12:27:26 IST" name="Default test" finished-at="2024-07-19T12:27:26 IST" duration-ms="116">
+    <test started-at="2024-07-21T12:32:55 IST" name="Default test" finished-at="2024-07-21T12:33:38 IST" duration-ms="42743">
       <class name="com.comcast.crm.contacttest.CreateContact_Test">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-19T12:27:26 IST" name="configBS" finished-at="2024-07-19T12:27:26 IST" duration-ms="433" status="PASS">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-21T12:32:55 IST" name="configBS" finished-at="2024-07-21T12:32:55 IST" duration-ms="608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-19T12:27:26 IST" name="configBC" finished-at="2024-07-19T12:27:26 IST" duration-ms="5" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "String.equals(Object)" because "BROWSER" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "BROWSER" is null
-at com.comcast.crm.basetest.BaseClass.configBC(BaseClass.java:45)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-21T12:32:55 IST" name="configBC" finished-at="2024-07-21T12:33:04 IST" duration-ms="9112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-19T12:27:26 IST" name="configBM" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1721372246773" status="SKIP">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-21T12:33:05 IST" name="configBM" finished-at="2024-07-21T12:33:14 IST" duration-ms="9882" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="createcontactwithOrgTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-19T12:27:26 IST" name="createcontactwithOrgTest" finished-at="2024-07-19T12:27:26 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "String.equals(Object)" because "BROWSER" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "BROWSER" is null
-at com.comcast.crm.basetest.BaseClass.configBC(BaseClass.java:45)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="CreateContactTest()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-21T12:33:14 IST" name="CreateContactTest" finished-at="2024-07-21T12:33:36 IST" duration-ms="21361" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createcontactwithOrgTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-19T12:27:26 IST" name="configAM" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1721372246795" status="SKIP">
+        </test-method> <!-- CreateContactTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-21T12:33:36 IST" name="configAM" finished-at="2024-07-21T12:33:38 IST" duration-ms="1840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-19T12:27:26 IST" name="configAC" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1721372246799" status="SKIP">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-21T12:33:38 IST" name="configAC" finished-at="2024-07-21T12:33:38 IST" duration-ms="487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-19T12:27:26 IST" name="configAS" finished-at="2024-07-19T12:27:26 IST" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.crm.contacttest.CreateContact_Test@35e2d654]" started-at="2024-07-21T12:33:38 IST" name="configAS" finished-at="2024-07-21T12:33:38 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
