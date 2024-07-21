@@ -64,10 +64,6 @@ public class WebDriverUtility {
 	public void SwitchtoAlertAndCancel(WebDriver driver) {
 		driver.switchTo().alert().dismiss();
 	}
-	public void Draganddrop(WebDriver driver,WebElement srcele,WebElement target) {
-		Actions action = new Actions(driver);
-		action.dragAndDrop(srcele, target).perform();
-	}
 	public void select (WebElement element, int index) {
 		Select sel = new Select(element);
 		sel.selectByIndex(index);
@@ -79,6 +75,22 @@ public class WebDriverUtility {
 	public void MousemoveOnElement (WebDriver driver,WebElement element) {
 		Actions act = new Actions(driver);
 		act.moveToElement(element).perform();
+	}
+	public void ClickAndHold(WebDriver driver,WebElement element) {
+		Actions act = new Actions(driver);
+		act.clickAndHold(element).perform();
+	}
+	public void RightClick(WebDriver driver,WebElement element) {
+		Actions act = new Actions(driver);
+		act.contextClick(element).perform();
+	}
+	public void DoubleClick(WebDriver driver,WebElement element) {
+		Actions act = new Actions(driver);
+		act.doubleClick(element).perform();
+	}
+	public void Draganddrop(WebDriver driver,WebElement source,WebElement target) {
+		Actions act = new Actions(driver);
+		act.dragAndDrop(source, target).perform();
 	}
 	public static String takeScreenshot(WebDriver driver, String methdName) throws Throwable {
 		TakesScreenshot ts = (TakesScreenshot)driver;
