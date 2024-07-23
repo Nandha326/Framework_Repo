@@ -5,6 +5,7 @@ import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -92,15 +93,27 @@ public class WebDriverUtility {
 		Actions act = new Actions(driver);
 		act.dragAndDrop(source, target).perform();
 	}
+	public void ScrollToElement(WebDriver driver,WebElement element) {
+		Actions act = new Actions(driver);
+		act.scrollToElement(element).perform();
+	}
+	public void ScrollbyValue(WebDriver driver,int x,int y) {
+		Actions act = new Actions(driver);
+		act.scrollByAmount(x, y).perform();
+	}
 	public static String takeScreenshot(WebDriver driver, String methdName) throws Throwable {
 		TakesScreenshot ts = (TakesScreenshot)driver;
-		//Temporary location
+		//Temporary location0
 		File srcfile = ts.getScreenshotAs(OutputType.FILE);
 		//Destination File
 		File destfile=new File("./Screenshots/homepage"+methdName+".png");
 		String Dest =destfile.getPath();
 		FileHandler.copy(srcfile, destfile);
 		return Dest;
+	}
+	public void JSExecutor(WebDriver driver,String key, String Obj) {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript(key,Obj);
 	}
 
 }
